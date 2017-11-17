@@ -1,0 +1,11 @@
+{
+
+  "development": {
+    "username": "andromeda",
+    "password": "andromeda",
+    "database": "andromedawebdb",
+    "host": "192.0.3.205",
+    "port": "3306",
+    "dialect": "mysql"
+  }
+}
