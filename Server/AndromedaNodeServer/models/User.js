@@ -2,12 +2,12 @@
 module.exports = (sequelize, DataTypes) => {
     var User = sequelize.define('User', {
 
-        ArcId: { DataTypes: INTEGER, primaryKey: true },
-        UserType: { DataTypes: Enumerator('customer', 'partner', 'technician', 'operator', 'admin'), allowNull: false },
-        Username: { DataTypes: string, allowNull: false },
-        Password: { DataTypes: Password, allowNull: false },
-        LastLogin: { DataTypes: Date, allowNull: false },
-        MasterArcId: { DataTypes: INTEGER, allowNull: true }
+        ArcId: { type: DataTypes.INTEGER(), primaryKey: true},
+        UserType: { type: DataTypes.ENUM('customer', 'partner', 'technician', 'operator', 'admin'), allowNull: false } ,
+        Username: { type: DataTypes.STRING(), allowNull: false },
+        Password: { type: DataTypes.STRING(), allowNull: false }, 
+        LastLogin: { type: DataTypes.DATE(), allowNull: false}, 
+        MasterArcId: { type: DataTypes.INTEGER(), allowNull: false }
     }, {
             classMethods: {
                 associate: function (models) {

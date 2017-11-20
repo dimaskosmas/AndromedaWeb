@@ -2,9 +2,9 @@
 module.exports = (sequelize, DataTypes) => {
     var ArcAffiliate = sequelize.define('Affiliate', {
 
-        arcId: { DataTypes: INTEGER, allowNull: false },
-        childArc: { DataTypes: INTEGER, allowNull: false },
-        id: { DataTypes: INTEGER, primaryKey: true }
+        arcId:      {type: DataTypes.INTEGER()                    },
+        childArc:   {type: DataTypes.INTEGER()                    },
+        id:         {type: DataTypes.INTEGER(), primaryKey: true  }
     }, {
             classMethods: {
                 associate: function (models) {
