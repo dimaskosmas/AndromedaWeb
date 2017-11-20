@@ -18,7 +18,8 @@
     "sequelize": "^4.22.8",
     "sequelize-cli": "^3.1.0",
     "serve-favicon": "^2.3.0",
-    "setup_vs_code_debug": "^1.2.4"
+    "setup_vs_code_debug": "^1.2.4",
+    "umzug": "^2.1.0"
   },
   "main": "app.js",
   "devDependencies": {},

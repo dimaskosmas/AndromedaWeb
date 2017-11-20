@@ -65,7 +65,6 @@ var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);
 });
 
-var models = require('./models');
 //database andromeda
 //password andromeda
 //host -> 192.0.3.205

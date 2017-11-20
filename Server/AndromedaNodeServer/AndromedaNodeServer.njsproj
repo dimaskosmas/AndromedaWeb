@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="migrations\20171120131738-Initial.js" />
     <Compile Include="models\Arc.js">
       <SubType>Code</SubType>
     </Compile>
