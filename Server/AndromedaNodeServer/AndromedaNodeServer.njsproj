@@ -45,6 +45,7 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="seeders\20171120134811-InitialArcs.js" />
+    <Compile Include="seeders\20171121073735-InitialUsers.js" />
     <Content Include="config\config.json" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />

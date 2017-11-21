@@ -52,15 +52,24 @@ module.exports = {
     },
 
     down: (queryInterface, Sequelize) => {
-          /*
-            Add reverting commands here.
-            Return a promise to correctly handle asynchronicity.
-      
-            Example:
-            return queryInterface.bulkDelete('Person', null, {});
-          */
-        return queryInterface.bulkDelete('Arc',{ Licence: '0000-2222-3333-4444' });
- 
-
+        /*
+          Add reverting commands here.
+          Return a promise to correctly handle asynchronicity.
+    
+          Example:
+          return queryInterface.bulkDelete('Person', null, {});
+        */
+        const licences = ['0000-2222-3333-4444',
+            '0000-2222-3333-5555',
+            '0000-2222-3333-6666',
+            '0000-2222-3333-7777',
+            '0000-2222-3333-8888',
+            '0000-2222-3333-9999'];
+        licences.forEach(function (licence) {
+            queryInterface.bulkDelete('Arc', {
+                Licence: licence
+            });
+        });
+        return queryInterface.bulkDelete('Arc',{Licence:  '0000-2222-3333-4444'});
     }
 };

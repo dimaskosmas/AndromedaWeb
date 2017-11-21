@@ -65,6 +65,8 @@ var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);
 });
 
+var date = Date.now();
+console.log(date);
 //database andromeda
 //password andromeda
 //host -> 192.0.3.205
