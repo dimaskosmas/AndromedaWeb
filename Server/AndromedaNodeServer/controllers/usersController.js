@@ -1,6 +1,6 @@
 "using strict";
 
-var userRepo = require('../data/usersRepository');
+var userRepo = require('../data/userRepository');
 var crypt = require('crypt');
 
 
