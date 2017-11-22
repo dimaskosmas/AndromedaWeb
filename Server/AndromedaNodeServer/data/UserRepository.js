@@ -1,7 +1,7 @@
 ﻿'use strict';
 var models = require('../models');
 
-var UserRepository = {
+var userRepository = {
     findByUserName: function(username) {
         return models.User.findAll({
             where: {
@@ -10,5 +10,4 @@ var UserRepository = {
         })
     }
 }
-
-module.exports = UserRepository;
+module.exports = userRepository;

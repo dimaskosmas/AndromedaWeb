@@ -1,0 +1,26 @@
+{
+  "name": "andromeda.web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "dependencies": {
+    "crypt": "^0.0.2",
+    "crypto": "^1.0.1",
+    "sequelize-cli": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaskosmas/AndromedaWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimaskosmas/AndromedaWeb/issues"
+  },
+  "homepage": "https://github.com/dimaskosmas/AndromedaWeb#readme"
+}
