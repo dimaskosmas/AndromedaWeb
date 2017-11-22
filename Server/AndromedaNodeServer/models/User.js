@@ -1,4 +1,6 @@
 ﻿'use strict';
+var bcrypt = require('../node_modules/bcrypt');
+
 module.exports = (sequelize, DataTypes) => {
     var User = sequelize.define('User', {
 
@@ -17,4 +19,5 @@ module.exports = (sequelize, DataTypes) => {
             }
         });
     return User;
+
 };

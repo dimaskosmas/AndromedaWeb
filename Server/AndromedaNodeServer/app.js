@@ -95,7 +95,7 @@ models.sequelize.sync()
         throw new Error(e);
 });
 var usersController = require('./controllers/usersController');
-app.get('/users', usersController.get);
+console.log(usersController.get);
 
 //User repository introduction
 
