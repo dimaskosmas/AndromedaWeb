@@ -2,13 +2,14 @@
 module.exports = (sequelize, DataTypes) => {
     var ArcAffiliate = sequelize.define('Affiliate', {
 
-        arcId:      {type: sequelize.INTEGER()                    },
-        childArc:   {type: sequelize.INTEGER()                    },
-        id:         {type: sequelize.INTEGER(), primaryKey: true  }
+        arcId:      {type: DataTypes.INTEGER                    },
+        childArc:   {type: DataTypes.INTEGER                    },
+        id:         {type: DataTypes.INTEGER, primaryKey: true  }
     }, {
             classMethods: {
                 associate: function (models) {
                     // associations can be defined here
+                    this.hasMany(Arc, { as: 'childArc' });
 
                 }
             }

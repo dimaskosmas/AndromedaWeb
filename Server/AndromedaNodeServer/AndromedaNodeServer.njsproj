@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="Entitites\User.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="migrations\20171120131738-Initial.js" />
     <Compile Include="models\Arc.js">
       <SubType>Code</SubType>
@@ -42,14 +45,29 @@
     <Compile Include="models\User.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="routes\index.js" />
+    <Compile Include="Repository\UserRepository.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\routes.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\users.js" />
     <Compile Include="seeders\20171120134811-InitialArcs.js" />
     <Compile Include="seeders\20171121073735-InitialUsers.js" />
+    <Compile Include="seeders\20171121082354-InitialAffiliateArcs.js" />
     <Content Include="config\config.json" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="views\index.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\login.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\signup.ejs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\index.pug" />
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
@@ -58,6 +76,8 @@
     <Folder Include="config\" />
     <Folder Include="migrations\" />
     <Folder Include="models\" />
+    <Folder Include="Entitites\" />
+    <Folder Include="Repository\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />

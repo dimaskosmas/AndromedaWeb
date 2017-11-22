@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{CB2F6E13-F6B2-49A4-883A-BE78C377F2AC}"
+	ProjectSection(SolutionItems) = preProject
+		Server.js = Server.js
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{A4913081-49C4-4317-9E5F-D7CCE8C0E079}"
 EndProject
